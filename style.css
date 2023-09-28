@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('img/WebBGMain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-family: 'Cormorant Garamond';
+  overflow-x: hidden;
+}
+h3 {
+  text-transform: uppercase;
+  font-style: italic;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+	background: #0000002d;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+}
+
+.highlight {
+  color: red;
+  text-transform: uppercase;
+}
+
+header #logo {
+	width: 350px;
+}
+
+footer {
+  background: #0000003a;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+footer img {
+  width: 150px;
+}
+
+.grid {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px;
+}
+
+.grid-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.grid-item .image-text {
+	position: absolute;
+	bottom: 70%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	color: #ff0000;
+	text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
